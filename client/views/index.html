@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="eng">
+    <meta charset="UTF-8">
+    <title>No idea what this is called yet</title>
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/style.min.css">
+</head>
+<body>
+<div>
+
+
+    <div class="container" ng-controller="WelcomeController">
+
+        <div>
+            <h1>{{heading + message}}</h1>
+            <input ng-model="note.message" type="text" placeholder="Enter your name">
+        </div>
+
+        <button ng-click="updateMessage(note)">Update</button>
+        <ul>
+            <li ng-repeat="note in notes">{{note.message}}</li>
+        </ul>
+    </div>
+
+
+<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+</body>
+</html>
