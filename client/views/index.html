@@ -19,7 +19,7 @@
 
         <button ng-click="updateMessage(note)">Update</button>
         <ul>
-            <li ng-repeat="note in notes">{{note.message}}</li>
+            <li ng-repeat="note in notes | filter:test | orderBy:'message'">{{note.message}}</li>
         </ul>
     </div>
 
