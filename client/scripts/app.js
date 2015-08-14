@@ -4,7 +4,7 @@ myApp.controller("WelcomeController", ['$scope', '$http', function($scope, $http
     $scope.note = {};
     $scope.notes = [];
 
-    $scope.heading = "Here is your message: ";
+    $scope.heading = "Messages: ";
 
     $scope.getData = function(){
         //GET
